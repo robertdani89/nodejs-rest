@@ -8,8 +8,8 @@ import {oktaAuth} from './auth'
 const app = express()
     .use(cors())
     .use(bodyParser.json())
-    .use(bearerToken())
-    .use(oktaAuth)
+    //.use(bearerToken())
+    //.use(oktaAuth)
     .use(productRouter);
 
 app.listen(4201, () => {
